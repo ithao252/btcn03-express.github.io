@@ -1,0 +1,60 @@
+
+    <div class="container">
+        <h1>Bé tập tính</h1>
+        <form method="POST" onsubmit="return OnClickCal()">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="number1"> Số thứ nhất</label>
+                </div>
+                <div class="col-sm-3">
+                    <input class="inputText" type="text" name="num1" id="input1" onchange="change1()" value={{number1}} >
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_sum" name="choice" {{checked choice "sum"}} value="sum">
+                    <label>Cộng</label>
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_minus" name="choice" {{checked choice "minus"}} value="minus">
+                    <label>Trừ</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="number2"> Số thứ hai</label>
+                </div>
+                <div class="col-sm-3">
+                    <input class="inputText" type="text" name="num2" id="input2" onchange="change2()" value={{number2}} >
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_mul" name="choice" {{checked choice "mul"}} value="mul">
+                    <label>Nhân</label>
+                </div>
+                <div class="col-sm-1">
+                    <input class="w3-radio" type="radio" id="radio_div" name="choice" {{checked choice "div"}} value="div">
+                    <label>Chia</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p>Kết quả</p>
+                </div>
+                <div class="col-sm-3">
+                    <input readonly class="inputText" type="text" name="result" value={{result}} >
+                </div>
+                <div class="col-sm-2">
+                    <button id="submit" type="submit" >Tính</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-2">
+                <label>Thông báo</label>
+            </div>
+            <div class="col-sm-8  msgCol">
+                <p id="msg">
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
